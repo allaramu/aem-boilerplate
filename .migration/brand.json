@@ -1,0 +1,61 @@
+{
+  "colors": {
+    "background": "rgb(255, 255, 255)",
+    "dark": "",
+    "light": "",
+    "link": "rgb(36, 119, 171)",
+    "linkHover": "rgb(42, 100, 150)",
+    "text": "rgb(41, 48, 51)"
+  },
+  "favicons": [
+    {
+      "rel": "apple-touch-icon",
+      "url": "https://www.discover.com/content/dam/dfs/dfs-home-loans/fav-icon/favicon.ico"
+    }
+  ],
+  "fonts": {
+    "body": {
+      "family": "DiscoverSans-Semibold",
+      "familySet": "DiscoverSans-Semibold"
+    },
+    "heading": {
+      "family": "DiscoverSans-Semibold",
+      "familySet": "DiscoverSans-Semibold, sans-serif"
+    },
+    "headingSizes": {
+      "l": {
+        "desktop": "24px",
+        "mobile": "24px"
+      },
+      "m": {
+        "desktop": "",
+        "mobile": "20px"
+      },
+      "s": {
+        "desktop": "18px",
+        "mobile": "18px"
+      },
+      "xl": {
+        "desktop": "32px",
+        "mobile": "28px"
+      },
+      "xs": {
+        "desktop": "14px",
+        "mobile": "16px"
+      },
+      "xxl": {
+        "desktop": "",
+        "mobile": "36px"
+      }
+    },
+    "sources": {
+      "googleFonts": [],
+      "typekit": null
+    }
+  },
+  "spacing": {
+    "contentMaxWidth": "1440px",
+    "navHeight": "",
+    "sectionPadding": "0px"
+  }
+}

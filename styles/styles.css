@@ -1,3 +1,12 @@
+@import url('brand.css');
+
+main .button-container { display: inline; }
+main a.button:any-link {
+  background: none; border: none; border-radius: 0;
+  color: var(--link-color); font-size: inherit; font-weight: inherit;
+  padding: 0; margin: 0; text-decoration: underline; white-space: normal;
+}
+
 /*
  * Copyright 2020 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
@@ -12,16 +21,16 @@
 
 :root {
   /* colors */
-  --background-color: white;
+  --background-color: rgb(255, 255, 255);
   --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --dark-color: #1a2744;
+  --text-color: rgb(41, 48, 51);
+  --link-color: rgb(36, 119, 171);
+  --link-hover-color: rgb(42, 100, 150);
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: "DiscoverSans-Semibold", sans-serif;
+  --heading-font-family: "DiscoverSans-Semibold", sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;

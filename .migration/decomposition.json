@@ -1,0 +1,66 @@
+{
+  "url": "https://www.discover.com/home-loans/",
+  "fragments": [
+    {
+      "path": "/nav",
+      "children": [
+        {
+          "type": "block",
+          "name": "nav",
+          "id": "rc1",
+          "bounds": { "x": 0, "y": 0, "width": 1329, "height": 60 }
+        }
+      ]
+    },
+    {
+      "path": "/home-loans",
+      "children": [
+        {
+          "type": "section",
+          "style": "dark",
+          "children": [
+            {
+              "type": "block",
+              "name": "hero",
+              "id": "rc2",
+              "bounds": { "x": 0, "y": 60, "width": 1329, "height": 340 }
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "children": [
+            {
+              "type": "default-content",
+              "id": "rc3",
+              "bounds": { "x": 0, "y": 400, "width": 1329, "height": 300 }
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "style": "dark",
+          "children": [
+            {
+              "type": "block",
+              "name": "accordion",
+              "id": "rc4",
+              "bounds": { "x": 0, "y": 700, "width": 1329, "height": 600 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/footer",
+      "children": [
+        {
+          "type": "block",
+          "name": "footer-links",
+          "id": "rc5",
+          "bounds": { "x": 0, "y": 1300, "width": 1329, "height": 254 }
+        }
+      ]
+    }
+  ]
+}

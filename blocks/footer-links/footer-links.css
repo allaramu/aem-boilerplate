@@ -1,0 +1,119 @@
+.footer-links {
+  --footer-bg: #ffffff;
+  --footer-text: rgb(41, 48, 51);
+  --footer-link-color: rgb(99, 104, 107);
+  --footer-font-size: 14px;
+  --footer-padding: 20px 10px;
+
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: var(--footer-font-size);
+  padding: var(--footer-padding);
+  text-align: left;
+}
+
+.footer-links > div {
+  padding: 4px 0;
+}
+
+.footer-links > div > div {
+  display: inline;
+}
+
+.footer-links p {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.footer-links a:any-link {
+  color: var(--footer-link-color);
+  text-decoration: none;
+  font-size: var(--footer-font-size);
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* First row: logo + social icons */
+.footer-links > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
+}
+
+.footer-links > div:first-child > div:first-child a {
+  color: var(--footer-text);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-links > div:first-child > div:last-child a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 8px;
+  text-decoration: none;
+}
+
+/* Links rows */
+.footer-links > div:nth-child(2),
+.footer-links > div:nth-child(3) {
+  padding: 2px 0;
+}
+
+.footer-links > div:nth-child(2) a,
+.footer-links > div:nth-child(3) a {
+  text-decoration: underline;
+}
+
+/* Badges row */
+.footer-links > div:nth-child(4) {
+  color: var(--footer-text);
+  font-size: 12px;
+  padding-top: 16px;
+  margin-top: 12px;
+}
+
+/* Tagline */
+.footer-links > div:last-child {
+  font-size: 12px;
+  color: var(--footer-text);
+  padding-top: 4px;
+}
+
+/* Reset EDS button decoration for footer links */
+footer .footer-links .button-container { display: inline; }
+footer .footer-links a.button:any-link {
+  background: none;
+  border: none;
+  color: var(--footer-link-color);
+  font-size: var(--footer-font-size);
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  display: inline;
+}
+
+footer .footer-links a.button:any-link:hover {
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .footer-links {
+    padding: 20px 32px;
+  }
+}

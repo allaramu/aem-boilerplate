@@ -1,9 +1,11 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  --nav-height: 60px;
+  background-color: #fff;
   width: 100%;
   z-index: 2;
   position: fixed;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 header nav {
@@ -15,10 +17,11 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1400px;
   height: var(--nav-height);
-  padding: 0 24px;
+  padding: 0 16px;
   font-family: var(--body-font-family);
+  color: #293033;
 }
 
 header nav[aria-expanded='true'] {
@@ -35,17 +38,17 @@ header nav[aria-expanded='true'] {
     position: relative;
   }
 
-  header nav {
+  header nav,
+  header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
-  }
-
-  header nav[aria-expanded='true'] {
+    align-items: center;
+    gap: 0 24px;
+    max-width: 1400px;
+    padding: 0 24px;
     min-height: 0;
     overflow: visible;
+    height: 60px;
   }
 }
 
@@ -55,7 +58,13 @@ header nav p {
 }
 
 header nav a:any-link {
-  color: currentcolor;
+  color: #293033;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header nav a:any-link:hover {
+  text-decoration: underline;
 }
 
 /* hamburger */
@@ -72,7 +81,7 @@ header nav .nav-hamburger button {
   border: 0;
   border-radius: 0;
   padding: 0;
-  background-color: var(--background-color);
+  background-color: #fff;
   color: inherit;
   overflow: initial;
   text-overflow: initial;
@@ -142,15 +151,17 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
 /* brand */
 header .nav-brand {
   grid-area: brand;
-  flex-basis: 128px;
+  flex-basis: 180px;
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
 }
 
 header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+  width: 180px;
+  height: 36px;
+  object-fit: cover;
+  object-position: top left;
 }
 
 /* sections */
@@ -170,7 +181,7 @@ header nav[aria-expanded='true'] .nav-sections {
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
-  font-size: var(--body-font-size-s);
+  font-size: 14px;
 }
 
 header nav .nav-sections ul > li {
@@ -245,8 +256,10 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     top: 150%;
     padding: 16px;
-    background-color: var(--light-color);
+    background-color: #fff;
     white-space: initial;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
@@ -258,7 +271,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+    border-bottom: 8px solid #fff;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
@@ -269,4 +282,9 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+header nav .nav-tools p {
+  font-size: 14px;
+  white-space: nowrap;
 }

@@ -1,0 +1,12 @@
+:root {
+  --heading-font-family: "DiscoverSans-Semibold", sans-serif;
+  --body-font-family: "DiscoverSans-Semibold", sans-serif;
+  --background-color: rgb(255, 255, 255);
+  --text-color: rgb(41, 48, 51);
+  --link-color: rgb(36, 119, 171);
+  --link-hover-color: rgb(42, 100, 150);
+  --section-padding: 0px;
+  --nav-height: 60px;
+}
+
+html, body { overflow: auto !important; }

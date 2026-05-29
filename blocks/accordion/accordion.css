@@ -1,0 +1,112 @@
+.accordion-container {
+  background-color: #f5f5f5;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion-container > div {
+  max-width: 100%;
+  padding: 0;
+}
+
+.accordion-container .default-content-wrapper {
+  background-color: #23233f;
+  padding: 30px 20px;
+  max-width: 100%;
+}
+
+.accordion-container .default-content-wrapper h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.accordion {
+  --accordion-bg: #fff;
+  --accordion-text: rgb(41, 48, 51);
+  --accordion-shadow: rgba(0, 0, 0, 0.1) 0 0 5px 0.5px;
+  --accordion-radius: 3px;
+  --accordion-gap: 20px;
+  --accordion-question-size: 18px;
+  --accordion-answer-size: 14px;
+  --accordion-icon-color: rgb(36, 119, 171);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--accordion-gap);
+  color: var(--accordion-text);
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.accordion > div {
+  background: var(--accordion-bg);
+  border-radius: var(--accordion-radius);
+  box-shadow: var(--accordion-shadow);
+  overflow: hidden;
+}
+
+/* Question (header) */
+.accordion > div > div:first-child h3 {
+  font-size: var(--accordion-question-size);
+  font-weight: 700;
+  margin: 0;
+  padding: 20px 80px 20px 20px;
+  cursor: pointer;
+  position: relative;
+  line-height: 1.4;
+}
+
+/* +/- icon */
+.accordion > div > div:first-child h3::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accordion-icon-color);
+  width: 20px;
+  text-align: center;
+}
+
+.accordion > div.open > div:first-child h3::after {
+  content: "\2014";
+}
+
+/* Answer panel */
+.accordion > div > div:first-child .accordion-answer {
+  display: none;
+  padding: 0 60px 20px 20px;
+  font-size: var(--accordion-answer-size);
+  line-height: 1.6;
+}
+
+.accordion > div.open > div:first-child .accordion-answer {
+  display: block;
+}
+
+.accordion > div > div:first-child .accordion-answer p {
+  margin: 0 0 0.8em;
+  font-size: var(--accordion-answer-size);
+}
+
+.accordion > div > div:first-child .accordion-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.accordion > div > div:first-child .accordion-answer a {
+  color: var(--accordion-icon-color);
+  text-decoration: underline;
+}
